@@ -127,5 +127,9 @@ main h1{
 }
 #reset-game span{
    text-shadow: 5px 5px 20px blue, 0 0 1em blue, 0 0 0.2em blue;
-
+}
+@media(max-width: 380px){
+   #reset-game{
+      margin-top: 100px;
+   }
 }
