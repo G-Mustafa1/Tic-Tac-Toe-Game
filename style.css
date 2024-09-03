@@ -7,9 +7,8 @@ body{
    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
    overflow-x: hidden;
    text-align: center;
-   /* height: 100vh; */
    background: rgb(94,14,191);
-background: linear-gradient(90deg, rgba(94,14,191,1) 0%, rgba(173,15,108,1) 100%);
+   background: linear-gradient(90deg, rgba(94,14,191,1) 0%, rgba(173,15,108,1) 100%);
 }
 .mein-box{
    height: 70vh;
@@ -18,14 +17,12 @@ background: linear-gradient(90deg, rgba(94,14,191,1) 0%, rgba(173,15,108,1) 100%
    align-items: center;
 }
 main h1{
-   padding-top: 50px ;
+   padding-top: 20px ;
    font-size: 55px;
-   /* text-shadow: 5px 5px 20px red, 0 0 1em red, 0 0 0.2em red; */
    color: white;
 }
 .span1{
     text-shadow: 5px 5px 20px blue, 0 0 1em blue, 0 0 0.2em blue; 
-    /* color: darkorchid; */
 }
 .span2{
    text-shadow: 5px 5px 20px rgb(255, 217, 0), 0 0 1em rgb(255, 217, 0), 0 0 0.2em  rgb(255, 217, 0); 
@@ -45,8 +42,6 @@ main h1{
    gap: 10px;
 }
 .btn{
-   /* text-shadow: aqua; */
-   /* text-shadow: 2px 2px #FF0000; */
    text-shadow: 5px 5px 20px blue, 0 0 1em blue, 0 0 0.2em blue;
    color: rgb(224, 230, 231);
    height: 18vmin;
@@ -56,8 +51,6 @@ main h1{
    border-radius: 5px;
    border: none;
    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-   /* box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px; */
-   /* box-shadow: rgba(219, 46, 127, 0.795) 0px 2px 4px 0px,; */
 }
 .box1{
    text-shadow: 5px 5px 20px red, 0 0 1em red, 0 0 0.2em red;
@@ -71,17 +64,11 @@ main h1{
    display: none;
 }
 #show-message{
-   /* overflow-x: hidden; */
-   /* height: 100vh; */
    display: flex;
    flex-direction: column;
    justify-content: center;
-   /* position: relative;
-   top: 50%;
-   display: none; */
    align-items: center;
    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-   /* display: none; */
 }
 #show-message p{
    font-size: 55px;
@@ -93,8 +80,6 @@ main h1{
    text-shadow: 5px 5px 20px red, 0 0 1em red, 0 0 0.2em red;
    color: rgb(224, 230, 231);
    background-color: rgb(0, 0, 0);
-   /* color: transparent; */
-   /* background-color: transparent; */
    padding: 15px 20px;
    font-size: 22px;
    border-radius: 10px;
@@ -114,9 +99,6 @@ main h1{
    text-shadow: 5px 5px 20px red, 0 0 1em red, 0 0 0.2em red;
    color: rgb(245, 253, 255);
    background-color: black;
-   /* background-color: rgb(64,7,76); */
-   /* color: transparent; */
-   /* background-color: transparent; */
    padding: 15px 20px;
    font-size: 22px;
    border-radius: 10px;
@@ -127,6 +109,30 @@ main h1{
 }
 #reset-game span{
    text-shadow: 5px 5px 20px blue, 0 0 1em blue, 0 0 0.2em blue;
+
+}
+@media(max-width: 400px){
+   h1{
+      margin-top: 100px;
+      font-size: 45px;
+   }
+   .mein-box{
+      height: 40vh;
+      width: 100%;
+   }
+   .boxes{
+      width: 100%;
+   }
+   .btn{
+      width: 100px;
+      height: 100px;
+   }
+   #reset-game{
+      margin-top: 60px;
+   }
+   #show-message p{
+      font-size: 45px;
+   }
 }
 @media(max-width: 380px){
    #reset-game{
