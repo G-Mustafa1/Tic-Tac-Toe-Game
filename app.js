@@ -75,9 +75,9 @@ function winnerGame() {
 function showMessage(game){
    // showMessage1.classList.remove('hide-box')
    showMessage1.style.paddingTop = "250px"
-   showMessage1.style.display = "block"
+   showMessage1.style.display = "block"                                                                                                                                                                                                                              
    // showMessage1.style.marginTop = "100px"
-   massages1.innerHTML=`<span>Congratulation</span>, Winner is ${game}`
+   massages1.innerHTML=`<span> 🎉 Congratulation</span>,🎉 Winner is ${game}`
 }
 
 resetGame.addEventListener('click', () => {
