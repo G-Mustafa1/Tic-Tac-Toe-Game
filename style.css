@@ -126,6 +126,7 @@ main h1{
    .btn{
       width: 100px;
       height: 100px;
+      font-size: 50px;
    }
    #reset-game{
       margin-top: 60px;
