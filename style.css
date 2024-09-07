@@ -46,8 +46,7 @@ main h1{
    color: rgb(224, 230, 231);
    height: 18vmin;
    width: 18vmin;
-   font-size: 10vmin;
-   font-weight: bold;
+   font-size: 12vmin;
    background-color: rgb(64,7,76);
    border-radius: 5px;
    border: none;
@@ -127,7 +126,7 @@ main h1{
    .btn{
       width: 100px;
       height: 100px;
-      font-size: 50px;
+      font-size: 60px;
    }
    #reset-game{
       margin-top: 60px;
