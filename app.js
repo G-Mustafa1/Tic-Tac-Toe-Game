@@ -18,12 +18,20 @@ let Arry = [
    [6, 7, 8],
 ];
 
+let sound1 = new Audio("sound/sound1.wav");
+let sound2 = new Audio("sound/sound2.wav");
+let sound3 = new Audio("sound/sound3.wav");
+
+function playSound(audio) {
+  audio.currentTime = 0; 
+  audio.play();
+}
+
+
 newGame.addEventListener("click", () => {
-   // showMessage1.classList.add('hide-box')
-   let sound = new Audio("sound/sound1.wav");
-      sound.play();
+   playSound(sound1);
    showMessage1.style.display = "none"
-   mein.style.display="block"
+   mein.style.display="flex"
    for (const tic of btn) {
       tic.classList.remove("box1")
       tic.disabled = false
@@ -33,9 +41,7 @@ newGame.addEventListener("click", () => {
 
 btn.forEach((box) => {
    box.addEventListener("click", () => {
-      let sound = new Audio("sound/sound1.wav");
-      sound.play();
-      // sound.src = "sound/sound1.wav"
+      playSound(sound1);
       console.log('Click')
       if (flag) {
          box.classList.add("box1")
@@ -52,9 +58,7 @@ btn.forEach((box) => {
 })
 
 function winnerGame() {
-   // console.log('hy')
    for (const winner of Arry) {
-      // console.log(winner[0],winner[1],winner[2])
       let winner1 = btn[winner[0]].innerText;
       let winner2 = btn[winner[1]].innerText;
       let winner3 = btn[winner[2]].innerText;
@@ -63,9 +67,7 @@ function winnerGame() {
          if(winner1 == winner2 && winner2 == winner3){
             console.log("Winner" , winner3)
             mein.style.display = "none"
-            // meinBox.classList.add('mein-box1')
-            let sound = new Audio("sound/sound2.wav");
-            sound.play()
+            playSound(sound2);
             showMessage(winner3)
          }
       }
@@ -73,18 +75,15 @@ function winnerGame() {
 };
 
 function showMessage(game){
-   // showMessage1.classList.remove('hide-box')
-   showMessage1.style.paddingTop = "250px"
-   showMessage1.style.display = "block"                                                                                                                                                                                                                              
-   // showMessage1.style.marginTop = "100px"
+
+   showMessage1.style.display = "flex"                                                                                                                                                                                                                              
    massages1.innerHTML=`<span> 🎉 Congratulation</span>,🎉 Winner is ${game}`
 }
 
 resetGame.addEventListener('click', () => {
    for (const resetgame of btn) {
       if(resetgame.innerHTML!= ""){
-         let sound = new Audio("sound/sound3.wav");
-            sound.play();
+         playSound(sound3);
       }
       resetgame.classList.remove('box1')
       resetgame.disabled =  false
