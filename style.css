@@ -1,3 +1,4 @@
+/* Reset CSS */
 *{
    margin: 0px;
    padding: 0px;
@@ -29,10 +30,11 @@ main{
    gap: 30px;
 }
 main h1{
-   font-size: 55px;
+   font-size: 60px;
    margin-bottom: 15px;
    color: white;
 }
+/* Span styles Text Shadow */
 .span1{
     text-shadow: 5px 5px 20px blue, 0 0 1em blue, 0 0 0.2em blue; 
 }
@@ -42,14 +44,14 @@ main h1{
 }
 .span3{
    text-shadow: 5px 5px 20px red, 0 0 1em red, 0 0 0.2em red; 
-
 }
+/* Span styles Text Shadow End */
 
 
 .boxes{
    display: grid;
-   grid-template-columns: repeat(3, 1fr);
-   gap: 10px;
+   grid-template-columns: repeat(3, 100px);
+   gap: 5px;
    margin: auto;
 }
 .btn{
@@ -92,8 +94,8 @@ main h1{
    text-shadow: 5px 5px 20px red, 0 0 1em red, 0 0 0.2em red;
    color: rgb(224, 230, 231);
    background-color: rgb(0, 0, 0);
-   padding: 15px 20px;
-   font-size: 22px;
+   padding: 10px 20px;
+   font-size: 25px;
    border-radius: 10px;
    border: none;
    outline: none;
@@ -125,10 +127,10 @@ main h1{
 }
 @media(max-width: 400px){
    main h1{
-      font-size: 45px;
+      font-size: 55px;
    }
    .mein-box{
-      height: 40vh;
+      height: auto;
       width: 100%;
    }
    .btn{
@@ -137,26 +139,27 @@ main h1{
       font-size: 60px;
    }
    #reset-game{
-      margin-top: 60px;
+      font-size: 25px;
+      padding: 10px 20px;
    }
    #show-message p{
       font-size: 45px;
    }
 }
-@media (max-width: 360px) {
+@media (max-width: 340px) {
    #show-message p{
       font-size: 40px;
    }
    main h1{
-      font-size: 40px;
+      padding-top: 15px;
+      font-size: 55px;
    }
    .boxes {
-      grid-template-columns: repeat(3, 80px);
-      gap: 6px;
+      grid-template-columns: repeat(3, 90px);
    }
    .btn {
-      width: 80px;
-      height: 80px;
-      font-size: 40px;
+      width: 90px;
+      height: 90px;
+      font-size: 45px;
    }
 }
